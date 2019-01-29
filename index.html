@@ -7,47 +7,39 @@
   <body>
     <header class="page-header">
       <div class="top-menu">
-        <div class="top-menu__logo">
-          <a class="top-menu__link"></a>
+        <div class="conteiner">
+        <div class="top-menu__wrapper">
+          <a class="top-menu__link" href="#"></a>
+          <form class="top-menu__search" action="#">
+            <input class="top-menu__item" name="search" type="text">
+            <label class="top-menu__item">Поиск:</label>
+          </form>
+          <div class="top-menu__bookmarks">
+            <a class="top-menu__title">Закладки: 0</a>
+          </div>
+          <div class="top-menu__basket">
+            <a class="top-menu__title" href="#">Корзина:0</a>
+          </div>
+          <div class="top menu__order">
+            <a class="top-menu__link" href="#">Оформить заказ</a>
         </div>
-        <div class="top-menu__search">
-          <input class="top-menu__item">
-          <img class="top-menu__icon">
-          <p class="top-menu__title">Поиск:</p>
         </div>
-        <div class="top-menu__bookmarks">
-          <img class="top-menu__icon">
-          <p class="top-menu__title">Закладки:</p>
-          <span class="top-menu__text">0</span>
         </div>
-        <div class="top-menu__cart">
-          <img class="top-menu__icon">
-          <p class="top-menu__title">Корзина:</p>
-          <span class="top-menu__text">0</span>
-        </div>
-        <button class="top-menu__button--green">Оформить заказ</button>
       </div>
       <div class="block-header">
-        <h1 class="block-header__title">Интернет-магазин
+        <div class="container">
+          <h1 class="block-header__title">Интернет-магазин
             строительных материалов
             и инструментов для ремонта</h1>
-        </div>
-        <div class="block-header__contact">
-          <div class="block-header__phone">
-            <img class="block-header__icon">
-            <p class="block-header__title-phone">+7 (812) 555-05-55</p>
-          </div>
+          <div class="block-header__contact">
+          <p class="block-header__title-phone">+7 (812) 555-05-55</p>
           <p class="block-header__title-contact">г. Санкт-Петербург, ул. Б. Конюшенная</p>
         </div>
-        <ul class="block-header__user-list">
-          <li class="block-header__item">
-            <img class="block-header__icon">
-            <a class="block-header__link">Вход</a>
-          </li>
-          <li class="block-header__item">
-            <a class="block-header__link">Регистраци</a>
-          </li>
-        </ul>
+        <div class="block-header__user-list">
+            <a class="user-list__login">Вход</a>
+            <a class="user-list__registration">Регистраци</a>
+          </div>
+        </div>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -77,9 +69,13 @@
           </li>
         </ul>
       </nav>
+      </div></
     </header>
+
+
   <main class="page-main">
-    <section class="features"
+    <div class="container">
+    <section class="page-main__features features">
       <ul class="features__list">
         <li class="features__item">
           <p class="features__title">Материалы</p>
@@ -96,7 +92,6 @@
           <p class="features__text">Для стройки</p>
           <img class="features__icon">
         </li>
-        <li class="features__slider"></li>
         <li class="features__item">
           <p class="features__title">Скидки 50%</p>
           <p class="features__text">На 350 товаров</p>
@@ -108,8 +103,27 @@
           <img class="features__icon">
         </li>
       </ul>
+      <div class="slider-wrapper">
+        <ul id="slider" class="slider">
+          <li class="slider__slide  slider__drill">
+            <img alt="drills" src="img/slide01.jpg">
+          </li>
+          <li class="slider__slide  slider__perforator">
+            <img alt="perforators" src="img/slide02.jpg">
+          </li>
+        </ul>
+        <a class="btn  btn--catalog" href="catalog.html">Открыть каталог</a>
+        <!--
+        <div class="slider__paginator">
+          <span class="page-btn" href="#"></span>
+          <span class="page-btn  page-btn- -active" href="#"></span>
+        </div>
+        -->
+        <span id="next" class="forward"></span>
+        <span id="prev" class="back"></span>
+      </div>
     </section>
-    <section class="products">
+    <section class="page-main__products products">
       <div class="products__title col-title">
         <h2 class="col-title__text"></h2>
         <button class="col-title__button button"></button>
@@ -147,7 +161,7 @@
         </li>
       </ul>
     </section>
-    <section class="produsers">
+    <section class="page-main__produsers produsers">
       <div class="produsers__title col-title">
         <h2 class="col-title__text"></h2>
         <button class="col-title__button button"></button>
@@ -180,12 +194,14 @@
         <li class="produser__item">
           <img class="produser__icon">
         </li>
-        <section class="service">
-         <div class="service__block">
-           <h2 class="service__title">Сервисы</h2>
-           <p class="service__slogan">Хороший интернет-магазин отличается от плохого не только ценами!
+      </ul>
+    </section>
+    <section class="page-main__service service">
+      <div class="service__block">
+        <h2 class="service__title">Сервисы</h2>
+        <p class="service__slogan">Хороший интернет-магазин отличается от плохого не только ценами!
              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-         </div>
+      </div>
          <ul class="service__list">
            <li class="service__item">
              <a class="service__link" href="#">Доставка</a>
@@ -206,11 +222,101 @@
          </div>
          <img class="service__icon">
         </section>
-      </ul>
+    <section class="page-main__info">
+      <div class="company-block">
+        <h2 class="company-block__title">КОМПАНИЯ «Техномарт»</h2>
+        <p class="company-block__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="company-block__text">Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями: </p>
+        <ul class="company-block__list">
+          <li class="company-block__item">Деловые линии</li>
+          <li class="company-block__item">Автотрейдинг</li>
+          <li class="company-block__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="company-block__link buttom" href="#">Подробнее о компании</a>
+      </div>
+      <div class="contact-block">
+        <h2 class="contact-block__title">КОНТАКТЫ</h2>
+        <p class="contact-block__text">Вы можете забрать товар сами,
+          заехав в наш офис:</p>
+        <div class="contact-block__map">
+        </div>
+        <button class="contact-block__buttom boutton">Заблудились? НапиШИТЕ НАМ!</button>
+      </div>
     </section>
-
-
+    </div>
   </main>
+
+
+  <footer class="page-footer">
+    <div class="page-footer__top top-footer">
+      <div class="top-footer__logo">
+        <img class="top-footer__icon">
+      </div>
+      <div class="top-footer__adress">
+        <p class="top-footer__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          +7 (812) 555-05-55</p>
+      </div>
+      <ul class="top-footer__nav-list">
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Компания</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Новости</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Каталог</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Доставка</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="top-footer__nav-list">
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Материалы</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Техника</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Инструмент</a>
+        </li>
+        <li class="top-footer__item">
+          <a class="top-footer__link" href="#">Спецпредложения</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-footer">
+      <div class="bottom-footer__copyright copyright">
+        <b class="copyright__text"></b>
+      </div>
+      <div class="bottom-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link-vkontakte" href="#">Мы в контакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-facebook" href="#">Мы в контакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-instagram" href="#">Мы в контакте</a>
+          </li>
+        </ul>
+        <div class="bottom-footer__feedback feedback">
+          <b class="feedback__text">Обратная связь:</b>
+          <a class="feedback__link" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="bottom-footer__developer developer">
+          <b class="developer__text">Разработано —</b>
+          <a class="developer__link" href="#">htmlacademy.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   </body>
 </html>
