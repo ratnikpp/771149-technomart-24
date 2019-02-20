@@ -38,8 +38,11 @@
               </div>
             </div></div>
 
-        <div class="container">
+        
         <div class="block-header">
+          <div class="container">
+          
+
 
               <div class="block-header__wrapper">
                 <h1 class="block-header__title">Интернет-магазин<br>
@@ -216,7 +219,7 @@
           <div class="produsers__wrapper">
             <div class="produsers__title col-title">
               <h2 class="col-title__text">Популярные производители</h2>
-              <a class="col-title__button button">Все производители</button>
+              <a class="col-title__button button">Все производители</a>
             </div>
             <ul class="produser__list">
               <li class="produser__item">
@@ -243,42 +246,60 @@
               <li class="produser__item">
                 <a class="product__link" href="#"><img class="produser__icon" width="204" height="69" src="img/Metabo.png" alt="Metabo"></a>
               </li>
-              <li class="produser__item">
-                <a class="product__link" href="#"><img class="produser__icon"></a>
-              </li>
-            </ul>
+             </ul>
           </div>
+        </div>
 
       </section>
 
       <section class="page-main__service service">
-        <div class="service__block">
-          <h2 class="service__title">Сервисы</h2>
-          <p class="service__slogan">Хороший интернет-магазин отличается от плохого не только ценами!
-               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-        </div>
-           <ul class="service__list">
-             <li class="service__item">
-               <a class="service__link" href="#">Доставка</a>
-             </li>
-             <li class="service__item">
-               <a class="service__link" href="#">Гарантия</a>
-             </li>
-             <li class="service__item">
-               <a class="service__link" href="#">Кредит</a>
-             </li>
-           </ul>
-           <div class="service__block">
-             <h2 class="service__title">Доставка</h2>
-             <p class="service__slogan">Мы с удовольствием доставим ваш товар прямо
-               к вашему подъезду совершенно бесплатно!
-               Ведь мы неплохо заработаем,
-               поднимая его на ваш этаж!</p>
+        <div class="container">
+          <div class="service__block">
+            <h2 class="service__title">Сервисы</h2>
+            <p class="service__slogan">Хороший интернет-магазин отличается от плохого не только ценами!
+                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
+          </div>
+          <div class="service__wrapper">
+            
+            <input type="radio" id="button-1" name="navigation" checked="">
+             <input type="radio" id="button-2" name="navigation">
+             <input type="radio" id="button-3" name="navigation">
+             <div class="slider-controls">
+             <label for="button-1">Доставка</label>
+             <label for="button-2">Гарантия</label>
+             <label for="button-3">Кредит</label>
            </div>
-           <img class="service__icon">
-          </section>
+             <div class="service-slider">
+              <div class="service-content service-slider1">
+               <h2 class="service-slider__title">Доставка</h2>
+               <p class="service-slider__text">Мы с удовольствием доставим ваш товар прямо
+                 к вашему подъезду совершенно бесплатно!
+                 Ведь мы неплохо заработаем,
+                 поднимая его на ваш этаж!</p>
+               </div>
+               <div class="service-content service-slider2">
+                 <h2 class="service-slider__title">Гарантия</h2>
+
+                <p class="service-slider__text">Если купленный у нас товар поломается или заискрит, 
+                а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                Дом уж восстановите как-нибудь сами.</p>
+               </div>
+               <div class="service-content service-slider3">
+                 <h2 class="service-slider__title">
+                 Кредит</h2>
+
+                <p class="service-slider__text">
+                  Залезть в долговую яму стало проще! 
+                  Кредитные консультанты придут вам на помощь.</p>
+                <a class="service-slider__button button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>  
+               </div>
+            </div>
+          </div>
+        </div>
+        </section>
 
       <section class="page-main__info">
+        <div class="container">
         <div class="company-block">
           <h2 class="company-block__title">КОМПАНИЯ «Техномарт»</h2>
           <p class="company-block__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -300,8 +321,9 @@
           </div>
           <button class="contact-block__buttom boutton">Заблудились? НапиШИТЕ НАМ!</button>
         </div>
+      </div>
       </section>
-    </div>
+    
 
   </main>
 
